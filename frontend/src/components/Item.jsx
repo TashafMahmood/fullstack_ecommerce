@@ -2,13 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { getPercentage } from "../utils/functions";
 
-const Item = ({ data, redirect }) => {
+const Item = ({ data, noredirect }) => {
   const navigate = useNavigate();
 
   return (
     <div
       className="shadow-md rounded-lg overflow-hidden hover:shadow-2xl transition-all cursor-pointer relative"
-      onClick={() => (!redirect ? null : navigate(`/product/${data?.id}`))}
+      onClick={() => (noredirect ? null : navigate(`/product/${data?.id}`))}
     >
       <div className="relative">
         <img src={data?.image} alt="" />

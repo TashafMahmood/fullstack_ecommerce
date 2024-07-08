@@ -9,7 +9,7 @@ const Popular = () => {
       <div className="mx-auto w-full bg-white flex items-center justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 max-w-[1400px] ">
           {popularData?.map((item, id) => (
-            <Item data={item} />
+            <Item data={item} redirect={false}/>
           ))}
         </div>
       </div>

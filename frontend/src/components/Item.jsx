@@ -5,10 +5,15 @@ import { getPercentage } from "../utils/functions";
 const Item = ({ data, noredirect }) => {
   const navigate = useNavigate();
 
+  const openProduct = (id) =>{
+    navigate(`/product/${id}`);
+    window.scrollTo(0,0)
+  }
+
   return (
     <div
       className="shadow-md rounded-lg overflow-hidden hover:shadow-2xl transition-all cursor-pointer relative"
-      onClick={() => (noredirect ? null : navigate(`/product/${data?.id}`))}
+      onClick={() => noredirect ? null : openProduct(data?.id)}
     >
       <div className="relative">
         <img src={data?.image} alt="" />

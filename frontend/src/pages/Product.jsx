@@ -57,6 +57,22 @@ const Product = () => {
               <IoIosStar color="#FFE234"/>
               <IoIosStar color="grey"/>
             </span >
+            <div className="mt-4 text-xl">Rs.{product?.price} <s className="text-red-500 ml-3">Rs.{product?.mrp}</s></div>
+            <div className="mt-4 text-lg font-light text-justify">{product?.long_description}</div>
+            <div className="mt-4 text-xl">
+              <div>Select Size</div>
+              <div className="flex items-center gap-3 mt-4">
+                <div className="w-12 h-12 border hover:border-gray-600 rounded-md flex items-center justify-center text-sm font-bold cursor-pointer">S</div>
+                <div className="w-12 h-12 border hover:border-gray-600 rounded-md flex items-center justify-center text-sm font-bold cursor-pointer">M</div>
+                <div className="w-12 h-12 border hover:border-gray-600 rounded-md flex items-center justify-center text-sm font-bold cursor-pointer">L</div>
+                <div className="w-12 h-12 border hover:border-gray-600 rounded-md flex items-center justify-center text-sm font-bold cursor-pointer">XL</div>
+                <div className="w-12 h-12 border hover:border-gray-600 rounded-md flex items-center justify-center text-sm font-bold cursor-pointer">XXL</div>
+              </div>
+            </div>
+            <button className="bg-red-500 px-4 py-2 mt-6 text-white hover:bg-red-600 text-lg">Add to cart</button>
+            <div className="text-lg font-light mt-6">
+              <span className='font-bold'>Category:</span> {product?.category}
+            </div>
           </div>
         </div>
       </div>

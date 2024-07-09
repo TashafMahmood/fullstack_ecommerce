@@ -55,6 +55,7 @@ export const newCollectionsData = [
     price: 550,
     mrp: 2100,
     image: collection1,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Mens",
   },
   {
@@ -64,6 +65,7 @@ export const newCollectionsData = [
     price: 645,
     mrp: 1900,
     image: collection2,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Mens",
   },
   {
@@ -73,6 +75,7 @@ export const newCollectionsData = [
     price: 520,
     mrp: 2000,
     image: collection3,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Mens",
   },
   {
@@ -83,6 +86,7 @@ export const newCollectionsData = [
     price: 5500,
     mrp: 9200,
     image: collection4,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Women",
   },
   {
@@ -92,6 +96,7 @@ export const newCollectionsData = [
     price: 499,
     mrp: 699,
     image: collection5,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Women",
   },
   {
@@ -102,6 +107,7 @@ export const newCollectionsData = [
     price: 1300,
     mrp: 4500,
     image: collection7,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Kids",
   },
   {
@@ -112,6 +118,7 @@ export const newCollectionsData = [
     price: 700,
     mrp: 2400,
     image: collection8,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Kids",
   },
   {
@@ -121,6 +128,7 @@ export const newCollectionsData = [
     price: 1200,
     mrp: 3600,
     image: collection9,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Women",
   },
   {
@@ -131,6 +139,7 @@ export const newCollectionsData = [
     price: 755,
     mrp: 2699,
     image: collection10,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Women",
   },
   {
@@ -140,6 +149,7 @@ export const newCollectionsData = [
     price: 550,
     mrp: 1500,
     image: collection11,
+    long_description:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     category: "Kids",
   },
 ];

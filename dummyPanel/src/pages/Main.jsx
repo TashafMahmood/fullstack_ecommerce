@@ -1,32 +1,20 @@
-import React, { useState } from "react";
-import Upload from "../components/Upload";
-import InputBox from "../components/InputBox";
-import Button from "../components/Button";
+import React, { Suspense } from "react";
+import Sidebar from "../components/Sidebar";
+import { Routes, Route } from "react-router-dom";
+import AddProduct from "../components/AddProduct";
+import AllProducts from "../components/AllProducts";
+import EditProduct from "../components/EditProduct";
 
 const Main = () => {
-  const [file, setFile] = useState(null);
-  const handleFileChange = (event) => {
-    setFile(event.target.files[0]);
-  };
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (file) {
-      console.log("File selected:", file);
-      // Handle file upload logic here
-    } else {
-      console.log("No file selected");
-    }
-  };
   return (
-    <div className="bg-pink-200 h-lvh flex items-center justify-center">
-      <div className="w-[500px] mx-10">
-        <Upload />
-        <InputBox title={"Product Name"} type={"text"} />
-        <InputBox title={"Product Description"} type={"text"} />
-        <InputBox title={"Product Price"} type={"number"} />
-        <InputBox title={"Product MRP"} type={"number"} />
-        <Button title={"Add Product"} />
-      </div>
+    <div className="flex">
+      <Sidebar />
+      <Routes>
+        <Route path="/" element={<div>Dashboard</div>} />
+        <Route path="/add-product" element={<AddProduct />} />
+        <Route path="/all-products" element={<AllProducts />} />
+        <Route path="/edit-product/:id" element={<EditProduct />} />
+      </Routes>
     </div>
   );
 };

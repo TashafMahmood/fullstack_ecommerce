@@ -22,9 +22,9 @@ const Routing = () => {
       {shouldShowNavBar && <NavigationBar />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/mens" element={<Shop banner={mens_banner} category={"Mens"} />} />
-        <Route path="/women" element={<Shop banner={women_banner} category={"Women"} />} />
-        <Route path="/kids" element={<Shop banner={kids_banner} category={"Kids"} />} />
+        <Route path="/mens" element={<Shop banner={mens_banner} category={"mens"} />} />
+        <Route path="/women" element={<Shop banner={women_banner} category={"women"} />} />
+        <Route path="/kids" element={<Shop banner={kids_banner} category={"kids"} />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

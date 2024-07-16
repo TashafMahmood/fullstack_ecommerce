@@ -34,7 +34,7 @@ const AddProduct = () => {
 
           try {
             const response = await axios.post(
-              "https://backend-work-self.vercel.app/api/v1/add-product",
+              "/api/v1/add-product",
               formData,
               {
                 headers: {

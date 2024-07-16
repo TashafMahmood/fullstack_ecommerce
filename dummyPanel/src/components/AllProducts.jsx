@@ -11,7 +11,7 @@ const AllProducts = () => {
   const getProducts = async () => {
     try {
       const res = await axios.get(
-        "https://backend-work-self.vercel.app/api/v1/get-products"
+        `/api/v1/get-products`
       );
       setProducts(res?.data?.products);
       setCount(res?.data?.total);
@@ -23,6 +23,7 @@ const AllProducts = () => {
   console.log(products, "producs");
   useEffect(() => {
     getProducts();
+    console.log('c')
   }, []);
 
   const deleteProduct = async (id) => {
@@ -30,7 +31,7 @@ const AllProducts = () => {
     setDeleting(true);
     try {
       const res = await axios.delete(
-        `https://backend-work-self.vercel.app/api/v1/delete-product/${id}`
+        `/api/v1/delete-product/${id}`
       );
       console.log(res, "delete response");
 

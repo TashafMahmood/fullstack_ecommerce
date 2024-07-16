@@ -17,7 +17,7 @@ const EditProduct = () => {
   const getProduct = async () => {
     try {
       const res = await axios.get(
-        `https://backend-work-self.vercel.app/api/v1/get-product/${id}`
+        `/api/v1/get-product/${id}`
       );
       setProduct(res?.data?.product);
       setLoading(false); // Set loading to false once data is fetched
@@ -48,7 +48,7 @@ const EditProduct = () => {
             setUpdating(true);
             try {
               const res = await axios.put(
-                `https://backend-work-self.vercel.app/api/v1/update-product/${id}`,
+                `/api/v1/update-product/${id}`,
                 values
               );
               console.log(res, "updated successfully!");
